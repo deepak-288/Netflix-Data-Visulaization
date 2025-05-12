@@ -23,7 +23,7 @@ if uploaded_file is not None:
     chart_df['Range'] = chart_df['Range'].astype(str)  # Convert to string for labels
 
     # Create colored bar chart
-    fig = px.bar(chart_df, x='Range', y='Count', color='Range', title='Rating Ranges')
+    fig = px.bar(chart_df, x='Year', y='Count', color='Range', title='Release Year')
 
     # Show in Streamlit
     st.plotly_chart(fig)
